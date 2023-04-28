@@ -16,6 +16,11 @@ const init = async () => {
     console.log(res.data)
 }
 
+app.post(URI, async (req, res) => {
+    console.log(req.body)
+    return res.send()
+})
+
 const PORT = process.env.PORT || 5000;
 
 app.get("/", (req, res) => {
