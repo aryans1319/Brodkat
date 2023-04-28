@@ -1,0 +1,22 @@
+{
+  "name": "workduck-backend",
+  "version": "1.0.0",
+  "description": "Backend Assignment Task of Workduck",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Aryan Shaw",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "1.4.0",
+    "body-parser": "1.20.2",
+    "dotenv": "16.0.3",
+    "express": "4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.22"
+  }
+}
