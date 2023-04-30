@@ -1,15 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-    <form action="/chat">
-        <input id="username" type="text" name="username" placeholder="Username" />
-        <br />
-        <br />
-        <button type="submit">Enter</button>
-    </form>
-</body>
+<html>
+  <head>
+    <title>BroadCast App</title>
+  </head>
+  <body>
+    <h1>BroadCast App Client Messages</h1>
+    <ul id="chat"></ul>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const socket = io();
+      const chat = document.getElementById("chat");
+
+      socket.on("messageList", (messages) => {
+        messages.forEach((message) => {
+          const li = document.createElement("li");
+          li.innerText = message.chat;
+          chat.appendChild(li);
+        });
+      });
+
+      socket.on("message", (message) => {
+        const li = document.createElement("li");
+        li.innerText = message;
+        chat.appendChild(li);
+      });
+    </script>
+  </body>
 </html>
