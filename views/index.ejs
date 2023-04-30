@@ -15,19 +15,16 @@
       socket.on("messageList", (messages) => {
         messages.forEach((message) => {
           const li = document.createElement("li");
-          li.innerText = `${message.name}: ${message.chat}`;
+          li.innerText = message.chat;
           chat.appendChild(li);
         });
       });
 
       socket.on("message", (message) => {
         const li = document.createElement("li");
-        li.innerText = `${message.name}: ${message.chat}`;
+        li.innerText = message;
         chat.appendChild(li);
       });
     </script>
   </body>
 </html>
-
-
-
