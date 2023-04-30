@@ -124,8 +124,12 @@ Start the localhost server
 ```
 As soon as you start move to localhost:5000 in your browser visit the bot named **@Workduck_Aryan_Bot** on Telegram click on start and start writing messages and you can see then broadcasting live on the server and working with multiple client devices at same time
 
-### Screenshot
+### Screenshots
 ![Screenshot from 2023-04-30 14-42-28](https://user-images.githubusercontent.com/72180855/235346420-5c10e6f8-9992-493b-9663-1f8703c00191.png)
+![Screenshot from 2023-04-30 15-13-06](https://user-images.githubusercontent.com/72180855/235346615-1ffb32e8-254a-460a-a221-8663b07431fa.png)
+![Screenshot from 2023-04-30 15-13-48](https://user-images.githubusercontent.com/72180855/235346619-279f58de-cc9a-4e3f-973a-710b5483b30c.png)
+![Screenshot from 2023-04-30 15-14-50](https://user-images.githubusercontent.com/72180855/235346624-1d5a28ae-49a2-4600-b37d-29a1e6737cdf.png)
+<img src="https://user-images.githubusercontent.com/72180855/235346822-6f38a8b3-5f94-41b1-b2bb-f776dbdcbee0.png" width="700" height="400">
 
 ### Tech Stack Used
 
