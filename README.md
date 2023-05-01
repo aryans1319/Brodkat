@@ -62,7 +62,8 @@ io.on("connection", async (socket) => {
 app.post(URI, async (req, res) => {
   console.log(req.body);
   const message = req.body.message.text;
-
+  const firstName = req.body.message.from.first_name;
+  
   redisClient.on("connect", () => {
     console.log("Redis client connected");
     redisClient.lPush("chats", message, (error, result) => {
@@ -76,11 +77,12 @@ app.post(URI, async (req, res) => {
 
   const chat = new Chat({
     chat: message,
+    name: firstName,
   });
 
   await chat.save();
 
-  io.emit("message", message);
+  io.emit("message", { name: firstName, chat: message });
 
   res.send("Message added to queue.");
 });
