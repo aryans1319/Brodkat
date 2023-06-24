@@ -1,6 +1,6 @@
-# Workduck-Backend Assignment
+# Brodkat - A Live Broadcasting Messaging System
 
-You will have to build a system which recieves messages from Telegram (third party API) and sends it to all relevant users (collaboration) along with showing historic messages (database).
+You will have to build a system that receives messages from Telegram (third-party API) and sends it to all relevant users (collaboration) along with showing historic messages (database).
 
 ![download](https://user-images.githubusercontent.com/72180855/235340781-7e96eb85-f027-444d-8d60-f2cd2b6a856b.jpeg)
 
